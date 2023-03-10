@@ -42,8 +42,8 @@ jobs:
       - name : Build MacCatalyst App
         shell: bash
         run: |
-          dotnet build -f net6.0-maccatalyst -c Release -o ./artifacts
-          dotnet publish -f net6.0-maccatalyst -c Release -p:BuildIpa=True -o ./artifacts
+          dotnet build -f net6.0-maccatalyst -c Release
+          dotnet publish -f net6.0-maccatalyst -c Release -p:BuildIpa=True
           
       - uses: actions/upload-artifact@v2
         with:
