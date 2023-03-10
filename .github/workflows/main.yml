@@ -32,7 +32,7 @@ jobs:
         run: |
           dotnet nuget locals all --clear 
           dotnet workload install maui --source https://aka.ms/dotnet6/nuget/index.json --source https://api.nuget.org/v3/index.json
-          dotnet workload install android ios maccatalyst tvos macos maui wasm-tools --source https://aka.ms/dotnet6/nuget/index.json --source https://api.nuget.org/v3/index.json
+          dotnet workload install android ios maccatalyst tvos macos maui wasm-tools --source https://api.nuget.org/v3/index.json
     
       - name: Restore nuget packages
         run: |
@@ -42,8 +42,8 @@ jobs:
       - name : Build MacCatalyst App
         shell: bash
         run: |
-          dotnet build -f net6.0-maccatalyst -c Release
-          dotnet publish -f net6.0-maccatalyst -c Release -p:BuildIpa=True
+          dotnet build -f net7.0-maccatalyst -c Release
+          dotnet publish -f net7.0-maccatalyst -c Release -p:BuildIpa=True
           
       - uses: actions/upload-artifact@v2
         with:
