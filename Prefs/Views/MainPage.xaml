@@ -4,7 +4,7 @@
 			 xmlns:viewModels="clr-namespace:Prefs.ViewModels"
 			 x:Class="Prefs.Views.MainPage"
 			 x:DataType="viewModels:MainViewModel"
-             BackgroundColor="{StaticResource Gray900}">
+             BackgroundColor="{StaticResource Gray200}">
 
     <ContentPage.Resources>
         <Style TargetType="Label">
