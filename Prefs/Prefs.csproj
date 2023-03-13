@@ -53,11 +53,6 @@
 	  <None Remove="Platforms\MacCatalyst\outside.txt" />
 	  <None Remove="Platforms\MacCatalyst\Resources\testinside.txt" />
 	</ItemGroup>
-	
-	<ItemGroup>
-	  <Compile Include="Platforms\MacCatalyst\Resources\testinside.txt" />
-	  <Compile Include="Platforms\MacCatalyst\outside.txt" />
-	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.MVVM" Version="8.1.0" />
