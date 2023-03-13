@@ -28,8 +28,8 @@
 	</PropertyGroup>
 
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">
-		<!-- Mac Catalyst Settings Bundle (Wihtout "Resources/Raw" prefix. package must end up in '.app/Contents/Resources/') -->
-		<MauiAsset Include="Platforms\MacCatalyst\Settings.bundle\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<!-- Mac Catalyst Settings Bundle (package must end up in '.app/Contents/Resources/') -->
+		<MauiAsset Include="Platforms\MacCatalyst\Settings.bundle\**"/>
 	</ItemGroup>
 	
 	<ItemGroup>
