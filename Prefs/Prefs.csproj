@@ -28,7 +28,7 @@
 	</PropertyGroup>
 
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">
-		<MauiAsset Include="Platforms\MacCatalyst\Resources\**" />
+		<MauiAsset Include="Platforms\MacCatalyst\Resources\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 	
 	<ItemGroup>
