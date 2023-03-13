@@ -8,27 +8,29 @@
 	<array>
 		<dict>
 			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
+			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>Server Connection</string>
-			<key>File</key>
-			<string>Server Connection</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-			<key>Title</key>
-			<string>Debug Settings</string>
-			<key>File</key>
 			<string>Debug</string>
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
+			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
-			<string>DB Updates</string>
-			<key>File</key>
-			<string>DB Updates</string>
+			<string>Show Language Prefixes</string>
+			<key>Key</key>
+			<string>togglea</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Show Language Postfix</string>
+			<key>Key</key>
+			<string>toggleb</string>
+			<key>DefaultValue</key>
+			<false/>
 		</dict>
 	</array>
 </dict>
